@@ -16,9 +16,24 @@ import Foundation
 /// 3. gender: String
 
 //struct ...
-
-
-
+struct Student{
+    var name: String
+    var track: String
+    var gender: String
+    func imageName() -> String{
+        if gender == "boy"{
+        return ("boyProfileImage")
+    }
+        else if gender == "girl"{
+    return("girlProfileImage")
+}
+else{
+    return ("profileimage2")
+}
+        _ = [
+    Student(name:"ريم خالد", track: "ios", gender: "girl"),
+    Student(name:"صالح شهاب", track: "andriod", gender: "boy"),
+            Student(name:"محمد علي", track:"web", gender: "boy")]
 
 
 // MARK:  2️⃣ قم بإنشاء دالة بداخل الهيكل باسم imageName()
@@ -60,3 +75,4 @@ import Foundation
 
 
 
+}
